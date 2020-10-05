@@ -1,2 +1,2 @@
 language = "python3"
-run = "python basics/output/string_operators.py"
+run = "python basics/decisions/simple_decision/if.py"
