@@ -10,3 +10,5 @@ if (str(second_number) < str(first_number)):
   print("The second number is the smallest!")
 elif (str(first_number) == str(second_number)):
   print("Both numbers are equal.")
+
+  
