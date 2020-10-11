@@ -8,7 +8,6 @@ cables = int(input())
 cables_count = 0
 #The program should then use a while loop to do the following:
 while (cables_count < cables):
-cables_count = cables_count + 1
+  cables_count = cables_count + 1
 # Display the message "Removed cable."
-print("Removed cable.",cables_count)
-
+print("\n Removed cable." * cables_count)
