@@ -1,2 +1,2 @@
 language = "python3"
-run = "python basics/decisions/simple_decision//counter.py"
+run = "python data/lists//simple_list.py"
