@@ -7,9 +7,9 @@ def search(location):
   with open("data/files/txt/location.txt") as file:
 #reads in between every single line of the file
     for line in file:
-      print(f"Looked in {line}")
+      print(f"Looked in {line}", end="")
 
-  print("...Done!")
+  print("\n...Done!")
 
 def run():
 #function with file name as a parameter
