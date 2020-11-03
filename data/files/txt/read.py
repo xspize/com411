@@ -1,20 +1,35 @@
-import os
 
-#The first function should be named search and should take 1 parameter that represents a file name
-def search(location):
+# Approach 1: using read
+
+def search(file_name):
   print("Searching...")
 #The function should then open the specified file for reading.
-  with open("data/files/txt/location.txt") as file:
-#reads in between every single line of the file
-    for line in file:
-      print(f"Looked in {line}", end="")
+  with open(file_name) as file:
+    lines = file.read().split('\n')
+    for line in lines:
+      print(f"Looked in {line}.")
+    print("..Done!")
 
-  print("\n...Done!")
 
 def run():
-#function with file name as a parameter
-  search("location.txt")
+  search("data/files/txt/location.txt")
 
-#runs the program
+
+run()
+
+# Approach 2: without using read
+
+def search(file_name):
+  print("Searching...")
+  with open(file_name) as file:
+    for line in file:
+      print(f"Looked in {line[:-1]}.")
+
+  print("...Done!")
+
+
+def run():
+  search("data/files/txt/location.txt")
+
 run()
 
