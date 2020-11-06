@@ -17,19 +17,24 @@ def run():
 
 run()
 
-# Approach 2: without using read
-
+# Approach 2: without using read 
+#file_name is a condition inside the function that is later called in the run function.
 def search(file_name):
   print("Searching...")
+  #open file 
   with open(file_name) as file:
+    #For each line in the file:
     for line in file:
-      print(f"Looked in {line[:-1]}.")
-
-  print("...Done!")
+      print(f"Looked in {line}",end="")
+  print("\nDone!")
 
 
 def run():
+  #calls the text file
   search("data/files/txt/location.txt")
 
+
+
 run()
+
 
