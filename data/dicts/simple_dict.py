@@ -15,3 +15,20 @@ def run():
 #runs the program
 run()
     
+    
+# Another way to do it:
+
+def pattern():
+  sequences = {}
+  sequences["Long Sequence"] = 1
+  sequences["Medium Sequence"] = 2
+  sequences["Short Sequence"] = 3
+
+  return sequences
+
+def run():
+  print(pattern())
+
+
+run()
+
