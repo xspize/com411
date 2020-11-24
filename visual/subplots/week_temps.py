@@ -31,4 +31,5 @@ def run():
   ax2.plot(range(len(data['week2'])), data['week2'])
   plt.show()
 
+ 
 run()
