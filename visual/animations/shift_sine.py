@@ -13,7 +13,7 @@ def animate(frame):
   ax.set_ylim(-1, 1)
 
   x = np.arange(0, 2*np.pi, 0.01)
-  y = np.sin(x * frame / 50)
+  y = np.sin(x + frame / 50)
 
 #Finally, the function should plot the points given by x and y.
   ax.plot(x,y)
