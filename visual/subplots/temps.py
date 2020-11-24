@@ -24,5 +24,4 @@ def run():
   ax2.bar(range(len(data)), data)
   plt.show()
 
-
 run()
