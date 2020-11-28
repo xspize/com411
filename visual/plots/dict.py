@@ -31,6 +31,7 @@ def generate():
         x = rnd.sample(range(1,30),5)
         y = rnd.sample(range(1,30),5)
         
+        #gets values from data()
         format = f"{values['colour']}{values['line']}{values['marker']}"
         
         plt.plot(x,y, format)
