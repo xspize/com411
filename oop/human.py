@@ -5,7 +5,7 @@ class Robot:
     laws = "Protect, Obey and Survive"
     
     # A class method
-    def the_laws():
+    def the_laws(self):
         print(Robot.laws)
         
     #an initialiser (special instance method)
@@ -17,7 +17,7 @@ class Robot:
         
     # An instance method
     def display(self):
-        print(f"I am {self.name}")
+        print(f"I am a {self.name}")
         
 
 if (__name__ == "__main__"):
@@ -25,6 +25,7 @@ if (__name__ == "__main__"):
 #creates object
   robot = Robot()
   robot.display()
+  robot.the_laws()
   
 class Human:
     
@@ -41,7 +42,7 @@ class Human:
         
     #instance method
     def display(self):
-        print(f"I am {self.name}")
+        print(f"I am  {self.name} and have {self.energy} energy.")
         
 # object
 if (__name__ == "__main__"):
