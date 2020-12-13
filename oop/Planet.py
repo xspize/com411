@@ -6,6 +6,8 @@ class Planet:
 #The class should contain the following instance variables:
  # humans - a list of human objects (initially an empty list)
  # robots - a list of robot objects (initially an empty list)
+
+#Replace the list of humans and the list of robots with a single dictionary named inhabitants which is an instance attribute.  Initially, the dictionary should looks as follows
     def __init__(self):
         self.inhabitants = {
         'humans' : [],
