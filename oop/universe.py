@@ -30,7 +30,7 @@ class Universe:
 
         for index in range(random.randint(1, 10)):
             human = Human(f"Human{index}")
-            planet.add_human(Human)
+            planet.add_human(human)
 
         # add to list of planets
         self.planets.append(planet)
@@ -61,8 +61,8 @@ if (__name__ == "__main__"):
   universe.generate()
   universe.show_populations()
   # You should add suitable code to test your code.
-  #print(repr(universe))
-  #print(universe)
+  print(repr(universe))
+  print(universe)
 
 
 

@@ -60,19 +60,19 @@ class Robot:
         return f'My name is {self.name} and I am {self.age} years old and my energy is {self.energy}.'
 
 
-#if (__name__ == "__main__"):
+if (__name__ == "__main__"):
 # creates an object it can be named whatever I want
-#it_can_be_any_name = Human()
+#it_can_be_any_name = Robot()
 #it_can_be_any_name.display_object()
-Robot = Robot()
-#human.display()
+    robot = Robot()
+#Robot.display()
 #we can display the string returned by repr as follows:
-print(repr(Robot))
+    print(repr(robot))
 #The function __str__ is called when attempt to display an object:
-#print(human)
-Robot.move(10)
-print(repr(Robot))
-Robot.eat(5)
-print(repr(Robot))
-Robot.eat(20)
-print(repr(Robot))
+#print(Robot)
+    robot.move(10)
+    print(repr(robot))
+    robot.eat(5)
+    print(repr(robot))
+    robot.eat(20)
+    print(repr(robot))
